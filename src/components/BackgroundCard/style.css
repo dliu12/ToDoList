@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+}
+.BackgroundCard-background {
+  /* border: 1px solid red; */
+  max-width: 500px;
+  height: 100%;
+  max-height: 750px;
+  min-height: 500px;
+  margin: 10px auto;
+  color: var(--charcoal);
+}
+.BackgroundCard-head {
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: space-between;
+}
+.BackgroundCard-addItem {
+  font-size: 35px;
+}
+.BackgroundCard-addItem:hover {
+  color: var(--lightSteelBlue);
+}
+.BackgroundCard-timeDate {
+  font-size: 24px;
+  font-weight: bold;
+}

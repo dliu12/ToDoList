@@ -1,0 +1,41 @@
+.NewCard-Background {
+  /* border: 1px solid red; */
+  background-color: var(--light-blueGreen);
+  border-radius: 5px;
+  padding: 5px;
+  margin: 15px;
+  display: flex;
+  flex-direction: column;
+  color: var(--charcoal);
+  box-shadow: var(--defaultBoxShadow);
+  animation-name: expand;
+  animation-duration: 0.2s;
+}
+
+.NewCard-form > textarea {
+  border: none;
+  display: block;
+  background-color: var(--light-blueGreen);
+  margin: 0 auto;
+  resize: none;
+  height: fit-content;
+}
+.NewCard-button {
+  background-color: transparent;
+  border: none;
+  width: fit-content;
+  margin-left: auto;
+  font-size: var(--defaultButtonFont);
+}
+.NewCard-button:hover {
+  color: var(--lightSteelBlue);
+}
+
+@keyframes expand {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}

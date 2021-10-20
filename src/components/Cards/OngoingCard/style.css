@@ -1,0 +1,46 @@
+.OngoingCard-Background {
+  /* border: 1px solid red; */
+  height: fit-content;
+  padding: 5px;
+  margin: 15px;
+  border-radius: 5px;
+  background-color: var(--lightSteelBlue);
+  display: flex;
+  flex-direction: column;
+  box-shadow: var(--defaultBoxShadow);
+
+  animation-name: expand;
+  animation-duration: 0.2s;
+}
+.OngoingCard-Actions {
+  /* border: 1px solid red; */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.OngoingCard-button > button {
+  border: none;
+  background-color: transparent;
+  padding-left: 5px;
+  font-size: var(--defaultButtonFont);
+}
+.OngoingCard-button > button:hover {
+  color: var(--light-blueGreen);
+}
+.OngoingCard-task {
+  /* border: 1px solid red; */
+  width: 95%;
+  margin: 15px auto;
+  font-family: 'Roboto';
+  /* font-weight: bold; */
+  color: var(--charcoal);
+}
+
+@keyframes expand {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}

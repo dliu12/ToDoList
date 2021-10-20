@@ -1,0 +1,41 @@
+.DoneCard-Background {
+  background-color: var(--charcoal);
+  border-radius: 5px;
+  margin: 15px;
+  height: fit-content;
+  box-shadow: var(--defaultBoxShadow);
+
+  animation-name: expand;
+  animation-duration: 0.2s;
+}
+.DoneCard-task {
+  width: 95%;
+  color: var(--gainsBorrow);
+  margin: 15px auto;
+  padding-bottom: 15px;
+  font-family: 'Roboto';
+}
+.DoneCard-actions {
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: space-between;
+  color: var(--gainsBorrow);
+  padding: 0 5px;
+  font-size: var(--defaultButtonFont);
+}
+.DoneCard-actions > button {
+  font-size: var(--defaultButtonFont);
+  color: var(--gainsBorrow);
+}
+.DoneCard-actions > button:hover {
+  color: #c4c4c4;
+}
+
+@keyframes expand {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
